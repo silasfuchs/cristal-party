@@ -9,15 +9,15 @@ import (
 
 func getnoc() int {
 	var noc int
-	fmt.Print("How many cristals do you want to open?\n")
+	fmt.Print("How many crystals do you want to open?\n")
 	fmt.Print("Type a number: ")
 	fmt.Scan(&noc)
 	fmt.Println("Your number is:", noc)
 	return noc
 }
 
-func openCristals(x int) {
-	fmt.Printf("I will open your %d cristal/s in:\n", x)
+func openCrystals(x int) {
+	fmt.Printf("I will open your %d crystal/s in:\n", x)
 
 	countdown()
 
@@ -170,7 +170,7 @@ func main() {
 	var noc int
 
 	fmt.Print("\n")
-	fmt.Print("💎 Hello and welcome to the cristal opening party\n")
+	fmt.Print("💎 Hello and welcome to the crystal opening party\n")
 
 	time.Sleep(3 * time.Second)
 
@@ -179,7 +179,7 @@ func main() {
 	var i string
 	for {
 		noc = getnoc()
-		openCristals(noc)
+		openCrystals(noc)
 
 		fmt.Print("Type Yes or No: ")
 		fmt.Scan(&i)
